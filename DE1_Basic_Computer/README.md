@@ -21,7 +21,7 @@ Voici une photo de l'architecture global du système :
 
 <img width="704" height="512" alt="image" src="https://github.com/user-attachments/assets/fc2a982c-8bbd-431a-ba4e-fcd47b4fc983" />
 
-# Projet VHDL — Tutoriel Composants & Interface Avalon
+# Projet VHDL — Composants & Interface Avalon
 
 Ce projet regroupe plusieurs fichiers VHDL formant un système embarqué simple. Il illustre l'utilisation de composants réutilisables, d'un affichage 7 segments et d'une interface Avalon pour communiquer avec un processeur (ex. Nios II sur FPGA Altera/Intel).
 
