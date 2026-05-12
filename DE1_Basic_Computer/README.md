@@ -1,3 +1,26 @@
+## Introduction
+
+L’objectif de ce TP est de concevoir un composant matériel spécifique : un registre 16 bits nommé `reg16_avalon_interface`, accessible en lecture et en écriture via le bus **Avalon Memory-Mapped** en mode maître/esclave. La valeur stockée dans ce registre est ensuite exportée vers l’extérieur grâce à une interface **Conduit**, permettant par exemple de piloter des LEDs ou des afficheurs 7 segments.
+
+Le travail se déroule en plusieurs étapes principales :
+
+1. Développement du composant en HDL (VHDL ou Verilog), incluant le registre et son interface Avalon MM.
+2. Utilisation de **Qsys / Platform Designer** et du **Component Editor** afin de :
+   - définir les interfaces (`clock`, `reset`, `Avalon-MM slave`, `conduit`) ;
+   - configurer correctement le composant ;
+   - corriger les éventuelles erreurs de validation.
+3. Intégration du composant dans un système embarqué comprenant :
+   - un processeur **Nios II** ;
+   - une mémoire **On-Chip Memory**.
+4. Génération automatique du code HDL du système complet.
+5. Importation du système dans un projet **Quartus II**, compilation et programmation de la carte FPGA.
+
+Ce TP permet ainsi de découvrir la création de périphériques personnalisés pour un système Nios II et leur intégration dans une architecture FPGA basée sur le bus Avalon.
+
+Voici une photo de l'architecture global du système : 
+
+<img width="704" height="512" alt="image" src="https://github.com/user-attachments/assets/fc2a982c-8bbd-431a-ba4e-fcd47b4fc983" />
+
 # Projet VHDL — Tutoriel Composants & Interface Avalon
 
 Ce projet regroupe plusieurs fichiers VHDL formant un système embarqué simple. Il illustre l'utilisation de composants réutilisables, d'un affichage 7 segments et d'une interface Avalon pour communiquer avec un processeur (ex. Nios II sur FPGA Altera/Intel).
